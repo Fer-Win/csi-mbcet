@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='w-full h-[60vh]  pb-10 overflow-hidden  bg-background flex absolute   bottom-0 z-30 rounded-t-[3rem]  '>
+    <footer className='w-full h-[60vh]  pb-10 overflow-hidden  bg-background flex  static bottom-0 z-30 rounded-t-[3rem]  '>
         <div className='px-24 w-full h-full flex flex-col pt-20 text-white justify-around  '>
                 <div className=' text-[14rem] leading-none bflex flex-col w-1/3 '>
                         <h1 className='font-extrabold'>CSI</h1>
@@ -29,10 +29,12 @@ const Footer = () => {
                         <div className='text-xl opacity-70'>Made with 💟 by <Link className='cursor-pointer animate-pulse text-violet-200 hover:text-violet-400 transition-all ease-in-out duration-150' href={'https://www.linkedin.com/in/ferwin-lopez/'}>Ferwin Lopez</Link></div>
                 </div>
         </div>
-        {/* <Image src={'/Footer_Image.png'} width={700} height={700} alt='Footer Image' className='scale-125'></Image> */}
+        <Image src={'/Footer_Image.png'} width={700} height={700} alt='Footer Image' className='scale-125'></Image>
             
-       <div className='w-full h-full absolute bg-red-500 -z-10'>
-   
+       <div className='w-full h-full absolute  -z-10'>
+     {/* <div className='bg-purple-500 w-[700px] h-96 rounded-full opacity-50 mx-auto -bottom-60 overflow-hidden absolute left-1/2 blur-[200px] -translate-x-1/2 '>
+        <Image src={'/noise.png'} width={700} height={700} alt='Footer Image' className='scale-125'></Image>
+     </div> */}
        </div>
     </footer>
   )

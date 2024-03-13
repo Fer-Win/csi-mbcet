@@ -15,7 +15,7 @@ const TransitionLink = ({href, label}: {href: string, label: string}) => {
        
     }
     return(
-        <button onClick={handleClick} className="text-2xl  text-slate-100 ">
+        <button onClick={handleClick} className="text-xl  text-slate-100 ">
             {label}
         </button>
     )
