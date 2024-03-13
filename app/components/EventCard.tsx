@@ -1,5 +1,7 @@
+import { redirect } from 'next/navigation'
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 interface EventCardProps {
     EventName : string,
     Date : string,
@@ -21,7 +23,7 @@ const EventCard:React.FC<EventCardProps> = ({EventName,Date,EventType,Tags,Image
             <div className='flex flex-col '>
                 <h1 className='text-3xl font-semibold font-'>{EventName}</h1>
                 <h1 className='text-lg font-normal mb-1'>{Date}</h1>
-                <div className='flex justify-start items-start'>
+                <div className='flex justify-start items-start flex-wrap'>
                     {
                         Tags.map((tag) => {
                             return <h1 className='text-sm capitalize font-normal bg-transparent border-white border-2 rounded-full m-1 px-4 flex justify-center items-center py-1'>{tag}</h1>
@@ -32,7 +34,7 @@ const EventCard:React.FC<EventCardProps> = ({EventName,Date,EventType,Tags,Image
             <div className='flex justify-between'>
             <h1 className='text-xl capitalize w-1/3 font-normal bg-blue-500 rounded-md m-1 px-4 flex justify-center items-center py-1'>{EventType}</h1>
             {
-                EventType === 'upcoming' ? <button className='text-xl capitalize w-1/3 font-normal bg-blue-500 rounded-md m-1 px-4 flex justify-center items-center py-1'>Register</button> : ''
+                EventType === 'upcoming' ? <Link href={'https://forms.gle/XqyrWmPBkx1hU8WLA'} target='_blank' className='text-xl capitalize w-1/3 font-normal bg-blue-500 rounded-md m-1 px-4 flex justify-center items-center py-1'>Register</Link> : ''
             }
             </div>
         </div>
