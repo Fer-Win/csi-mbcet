@@ -7,7 +7,7 @@ const Navigation =()=>{
          <Image alt="Logo" width={100} height={100} src={'/logo/CSI_Logo_White.png'}></Image>
             <div className="flex gap-16">
                     <TransitionLink href="/" label="Home"/>
-                    <TransitionLink href="/work" label="Work"/>
+                    <TransitionLink href="/events" label="Events"/>
                     <TransitionLink href="/about" label="About"/>
             </div>
     </nav>

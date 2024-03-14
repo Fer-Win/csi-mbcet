@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import eventsData from '../data/events';
 import EventCard from '../components/EventCard';
+import Footer from '../components/Footer';
 
 const page = () => {
   const [events, setEvents] = useState(eventsData);
@@ -29,33 +30,35 @@ const page = () => {
   };
 
   return (
-    <div className="w-screen h-screen">
-      <h2 className="px-24 text-6xl mb-24">Events</h2>
+    <div className="w-screen  mt-10 ">
+      <h2 className=" ml-24 text-6xl mb-16">Events</h2>
 
+      <div className='flex ml-24 gap-x-20 my-10 h-fit justify-start  items-center'>
       <input
         type="text"
         onChange={(e) => handleInputChange(e)}
         value={input}
-        className="text-black"
+        className="text-lg text-white bg-transparent px-4 py-3 rounded-md border-2 outline-none border-white w-1/4 "
         placeholder="Search for Events"
       />
-      <div className="flex gap-10 m-10">
-        <button className={`px-2 py-1 bg-gray-800 text-white text-xl ${type === 'all'?'border-red-500 border-2':''}`} onClick={() => handleTypeChange('all')}>
+      <div className="flex gap-10 ">
+        <button className={`tab-button ${type === 'all'?'border-red-500 border-2':''}`} onClick={() => handleTypeChange('all')}>
           All
         </button>
-        <button className={`px-2 py-1 bg-gray-800 text-white text-xl ${type === 'upcoming'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('upcoming')}>
+        <button className={`tab-button ${type === 'upcoming'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('upcoming')}>
           Upcoming
         </button>
-        <button className={`px-2 py-1 bg-gray-800 text-white text-xl ${type === 'past'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('past')}>
+        <button className={`tab-button ${type === 'past'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('past')}>
           Past
         </button>
-        <button className={`px-2 py-1 bg-gray-800 text-white text-xl ${type === 'ongoing'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('ongoing')}>
+        <button className={`tab-button ${type === 'ongoing'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('ongoing')}>
           Ongoing
         </button>
       </div>
+      </div>
       {
         !notFound && (
-          <div className="w-screen h-screen flex justify-center mx-auto gap-20 flex-wrap">
+          <div className="w-screen min-h-screen mb-40 flex justify-center mx-auto gap-20 flex-wrap">
             {events.map((item, index) => {
               return (
                 <EventCard
@@ -72,7 +75,8 @@ const page = () => {
           </div>
         )
       }
-      {notFound && <h1 className="text-4xl text-center">No Events Found</h1>}
+      {notFound && <h1 className="text-5xl text-center mt-20">No Events Found</h1>}
+ 
     </div>
   );
 };
