@@ -30,7 +30,7 @@ const page = () => {
   };
 
   return (
-    <div className="w-screen  mt-10 ">
+    <div className="w-screen pt-48 min-h-screen">
       <h2 className=" ml-24 text-6xl mb-16">Events</h2>
 
       <div className='flex ml-24 gap-x-20 my-10 h-fit justify-start  items-center'>

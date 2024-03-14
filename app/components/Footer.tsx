@@ -4,11 +4,16 @@ import { FaInstagramSquare,FaFacebookSquare  } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import Link from 'next/link';
 import TransitionLink from './TransitionLink';
+import { Poppins} from "next/font/google";
 
+const poppins = Poppins({
+        subsets: ["latin"],
+        weight: '100'
+});
 
 const Footer = () => {
   return (
-    <div className='footer w-full h-[60vh]  overflow-hidden  bg-background flex  rounded-t-[3rem]  bg-red-500'>
+    <div className={`footer w-full h-[60vh]  overflow-hidden  bg-background flex  rounded-t-[3rem]   bg-red-500`} >
         <div className='px-24 w-full h-full flex flex-col pt-20 text-white justify-around  '>
                 <div className=' text-[14rem] leading-none bflex flex-col w-1/3 '>
                         <h1 className='font-extrabold'>CSI</h1>
