@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react';
 
 
-export default function Paragraph({paragraph}) {
+export default function Paragraph({paragraph}:{paragraph:string}) {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -18,7 +18,7 @@ export default function Paragraph({paragraph}) {
     className='text-5xl'
     >
     {
-      words.map( (word, i) => {
+      words.map( (word:any, i:any) => {
         const start = i / words.length
         const end = start + (1 / words.length)
         return <Word key={i} progress={scrollYProgress} range={[start, end]}>{word}</Word>
@@ -28,7 +28,7 @@ export default function Paragraph({paragraph}) {
   )
 }
 
-const Word = ({children, progress, range}) => {
+const Word = ({children, progress, range}:{children:any,progress:any,range:any}) => {
   const opacity = useTransform(progress, range, [0, 1])
   return <span >
     <span >{children}</span>
