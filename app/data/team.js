@@ -49,7 +49,7 @@ const team =[
       "img_url": "https://source.unsplash.com/random/200x200/?portrait",
       "linkedin_url": "https://www.linkedin.com/in/sarahjohnson",
       "github_url": "https://github.com/sarahjohnson",
-      "position": "Marketing & Communications Manager",
+      "position": "Marketing Manager",
       "email": "sarah.johnson@example.com",
       "phone": "+1122334455"
     },

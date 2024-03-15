@@ -3,7 +3,8 @@ import Member from '../components/Member'
 import team from '../data/team.js'
 const Page = () => {
   return (
-    <div className='w-screen min-h-screen pt-48'>
+    <div className='w-screen min-h-screen py-48'>
+         <h2 className=" ml-24 text-6xl mb-16">Team</h2>
       <div className='flex flex-wrap gap-x-4 gap-y-10 justify-center items-center'>
         {
           team.map((member,index)=>{

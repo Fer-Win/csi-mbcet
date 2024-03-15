@@ -42,16 +42,16 @@ const Page = () => {
         placeholder="Search for Events"
       />
       <div className="flex gap-10 ">
-        <button className={`tab-button ${type === 'all'?'border-red-500 border-2':''}`} onClick={() => handleTypeChange('all')}>
+        <button className={`tab-button  ${type === 'all'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`} onClick={() => handleTypeChange('all')}>
           All
         </button>
-        <button className={`tab-button ${type === 'upcoming'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('upcoming')}>
+        <button className={`tab-button ${type === 'upcoming'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`}  onClick={() => handleTypeChange('upcoming')}>
           Upcoming
         </button>
-        <button className={`tab-button ${type === 'past'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('past')}>
+        <button className={`tab-button ${type === 'past'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`}  onClick={() => handleTypeChange('past')}>
           Past
         </button>
-        <button className={`tab-button ${type === 'ongoing'?'border-red-500 border-2':''}`}  onClick={() => handleTypeChange('ongoing')}>
+        <button className={`tab-button ${type === 'ongoing'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`}  onClick={() => handleTypeChange('ongoing')}>
           Ongoing
         </button>
       </div>
