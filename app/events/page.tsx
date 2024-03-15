@@ -4,7 +4,7 @@ import eventsData from '../data/events';
 import EventCard from '../components/EventCard';
 import Footer from '../components/Footer';
 
-const page = () => {
+const Page = () => {
   const [events, setEvents] = useState(eventsData);
   const [input, setInput] = useState('');
   const [type, setType] = useState('all');
@@ -81,4 +81,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

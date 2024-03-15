@@ -1,7 +1,7 @@
 import React from 'react'
 import Member from '../components/Member'
 import team from '../data/team.js'
-const page = () => {
+const Page = () => {
   return (
     <div className='w-screen min-h-screen pt-48'>
       <div className='flex flex-wrap gap-x-4 gap-y-10 justify-center items-center'>
@@ -19,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
