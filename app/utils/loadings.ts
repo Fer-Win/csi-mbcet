@@ -33,13 +33,15 @@ export const animateLogoIn = () => {
     tl.set(logo, {
         scale: 0,
         opacity: 0,
+        display:"block",
     }).to(logo, {
         scale: 1,
         opacity: 1,
         ease: "back.out(1.7)",
         duration: 0.3,
     }).to(logo, {
-        opacity:0
+        opacity:0,
+        display:"hidden",
     })
 }
 

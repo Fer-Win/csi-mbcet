@@ -15,7 +15,7 @@ const TransitionLink = ({href, label}: {href: string, label: string}) => {
        
     }
     return(
-        <button onClick={handleClick} className="text-xl group  text-slate-100 hover:text-slate-300 font-medium transition-all ease-in-out duration-150 ">
+        <button onClick={handleClick} className="text- group   text-slate-100 hover:text-slate-300 font-light   transition-all ease-in-out duration-150 ">
             {label}
             <div className="h-[1px] bg-blue-50 scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out origin-center"></div>
         </button>

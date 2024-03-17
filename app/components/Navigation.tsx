@@ -5,10 +5,10 @@ import JoinButton from "./JoinButton";
 
 const Navigation =()=>{
     return(
-        <nav className="w-screen flex flex-row place-items-center justify-between px-24 py-3 bg-red-500 bg-opacity-65 fixed backdrop-blur-md z-30">
+        <nav className="w-screen flex flex-row place-items-center justify-between px-24 py-3  bg-opacity-65 fixed backdrop-blur-md z-30">
        <Link href='/'>
-        <Image alt="Logo" width={70} height={70} src={'/logo/CSI_Logo_white.png'}></Image>
-        <div className="font-extralight text-center text-sm tracking-tighter">MBCET</div>
+        <Image alt="Logo" width={60} height={60} src={'/logo/CSI_Logo_white.png'}></Image>
+        <div className="font-normal text-opacity-20 text-center text-sm tracking-tighter">MBCET</div>
        </Link>
             <div className="flex gap-16 text-slate-950">
                     <TransitionLink href="/" label="Home"/>
