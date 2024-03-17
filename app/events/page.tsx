@@ -30,18 +30,18 @@ const Page = () => {
   };
 
   return (
-    <div className="w-screen pt-48 min-h-[130vh]  event-background">
-      <h2 className=" ml-24 text-6xl mb-16">Events</h2>
+    <div className="w-screen py-48 min-h-[130vh] pb event-background">
+      <h2 className="ml-10 md:ml-24 text-6xl mb-16">Events</h2>
 
-      <div className='flex ml-24 gap-x-20 my-10 h-fit justify-start  items-center'>
+      <div className='flex flex-col justify-start ml-10 md:gap-x-20 my-10 h-fit items-start md:flex-row md:ml-24 gap-5 '>
       <input
         type="text"
         onChange={(e) => handleInputChange(e)}
         value={input}
-        className="text-sm text-white bg-transparent px-3 py-2 rounded-md border outline-none border-white w-1/4 "
+        className="text-sm text-white bg-transparent px-3 py-2 rounded-md border outline-none border-white md:w-1/4 w-3/4 "
         placeholder="Search for Events"
       />
-      <div className="flex gap-10 text-xs ">
+      <div className="flex flex-wrap md:flex-nowrap md:gap-10 gap-3 text-xs ">
         <button className={`tab-button  ${type === 'all'?'border-white border-opacity-60 border bg-indigo-950':''}`} onClick={() => handleTypeChange('all')}>
           All
         </button>

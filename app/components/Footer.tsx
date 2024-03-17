@@ -13,35 +13,53 @@ const poppins = Poppins({
 
 const Footer = () => {
   return (
-    <div className={`footer w-screen h-[60vh]  overflow-hidden  bg-background flex  rounded-t-[3rem]   bg-red-500`} >
-        <div className='px-24 w-full h-full flex flex-col pt-20 text-white justify-around  '>
-                <div className=' text-[14rem] leading-none bflex flex-col w-1/3 '>
-                        <h1 className='font-extrabold'>CSI</h1>
-                        <h1 className='text-xl text-right pr-16'>MBCET Chapter</h1>
+    <div className={`footer w-screen h-fit  overflow-hidden  bg-background px-10 md:px-24 pt-4 md:py-6  bottom-0 border-t-[1px] border-white  `} >
+       <div>
+       <div className='flex flex-col md:flex-row mx-auto justify-between  w-full gap-10'>
+         <div className='flex flex-col'>
+                <h1 className='text-4xl font-normal '>CSI SB MBCET</h1>
+                <p className='font-extralight mt-1'>Mar Baselios College of Engineering and Technology, Trivandrum.</p>
+         </div>
+         <div className='flex gap-20 '>
+                <div className='flex items-start flex-col justify-start'>
+                        <h2 className='text-base'>Follow Us</h2>
+                        <div className='flex flex-col items-start justify-start gap-2 mt-3'>
+                                <Link href='https://www.instagram.com/csimbcet/' passHref target='_blank' className='text-sm font-extralight '>
+                                        Instagram
+                                </Link>
+                               
+                                <Link href='https://www.linkedin.com/company/csi-sbmbcet' passHref target='_blank' className='text-sm font-extralight '>
+                                        LinkedIn
+                                </Link>
+                                </div>
                 </div>
-                <div className='flex flex-col gap-7'>
-                        <div className='flex gap-10 text-2xl font-thin '>
-                                <TransitionLink href={'/'} label='Home'></TransitionLink>
-                                <TransitionLink href={'/team'} label='Team'></TransitionLink>
-                                <TransitionLink href={'/events'} label='Events'></TransitionLink>
-                                <TransitionLink href={'/about'} label='About'></TransitionLink>
-                        </div>
-                        <div className='flex text-4xl gap-16'> 
-                        <FaFacebookSquare />
-                         <FaInstagramSquare />
-                         <BsLinkedin />
-                        </div>
-                        <h1 className='text-2xl'>@ 2024  Computer Society of India | MBCET. All rights reserved.</h1>
-                        <div className='text-xl opacity-70'>Made with 💟 by <Link className='cursor-pointer animate-pulse text-violet-200 hover:text-violet-400 transition-all ease-in-out duration-150' href={'https://www.linkedin.com/in/ferwin-lopez/'}>Ferwin Lopez</Link></div>
+                <div className='flex items-start flex-col justify-start'>
+                        <h2 className='text-base'>Navigate</h2>
+                        <div className='flex flex-col items-start justify-start gap-2 mt-3'>
+                                <Link href='/' passHref  className='text-sm font-extralight '>
+                                        Home
+                                </Link>
+                                <Link href='/events' passHref  className='text-sm font-extralight '>
+                                        Events
+                                </Link>
+                                <Link href='/team' passHref className='text-sm font-extralight '>
+                                        Team
+                                </Link>
+                                <Link href='/about' passHref  className='text-sm font-extralight '>
+                                        About
+                                </Link>
+                                </div>
                 </div>
-        </div>
-        <Image src={'/Footer_Image.png'} width={700} height={700} alt='Footer Image' className='scale-125'></Image>
-            
-       {/* <div className='w-full h-full absolute  -z-10'> */}
-     {/* <div className='bg-purple-500 w-[700px] h-96 rounded-full opacity-50 mx-auto -bottom-60 overflow-hidden absolute left-1/2 blur-[200px] -translate-x-1/2 '>
-        <Image src={'/noise.png'} width={700} height={700} alt='Footer Image' className='scale-125'></Image>
-     </div> */}
-       {/* </div> */}
+               
+         </div>
+        
+       </div>
+       <div className='w-full my-6 md:my-4 px-24 h-[1px] bg-opacity-40 bg-white'></div>
+       <div className=' mb-6  font-extralight text-sm text-opacity-50'>
+        @2024 CSI SB MBCET. All Rights Reserved.
+       </div>
+       </div>
+      
     </div>
   )
 }
