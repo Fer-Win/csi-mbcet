@@ -27,7 +27,7 @@ const About = () => {
           <ol>
             <li>Being recognized as the Best Student Branch among engineering colleges in Kerala, Tamil Nadu, and Pondicherry for the years 2010 and 2011.</li>
             <li>Successfully hosting the prestigious 26th National Student Convention (NSC 2010) in association with the Trivandrum Chapter of CSI.</li>
-            <li>Having our Student Branch Counselor, Mr. Biju B Varghese, receive the "Significant Contribution Award - Trivandrum Chapter" at the CSI Annual Convention in 2015 and the "Longest Continuous Student Branch Counselor" Award in 2012.</li>
+            <li>Having our Student Branch Counselor, Mr. Biju B Varghese, receive the &quot;Significant Contribution Award - Trivandrum Chapter&quot; at the CSI Annual Convention in 2015 and the &quot;Longest Continuous Student Branch Counselor&quot; Award in 2012.</li>
           </ol>
         </div>
 
