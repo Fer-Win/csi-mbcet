@@ -26,7 +26,7 @@ const Member:React.FC<MemberProps> = ({img,name,linkedin,instagram,position }) =
     const randomPastelColor = pastelColors[Math.floor(Math.random() * pastelColors.length)];
 
   return (
-   <div className=' max-w-72 flex flex-col gap-3 ml-10 '>
+   <div className=' max-w-72 flex flex-col gap-3 ml-0 md:ml-10 '>
      <div className='w-72 h-72 bg-slate-300 group bg-center bg-cover rounded-tr-2xl rounded-b-2xl rounded-tl-sm  overflow-hidden'>
     <Image className='group-hover:scale-125 transition-all ease-in-out duration-200' src={img} height={400} width={400} alt={name}></Image>
     </div>
