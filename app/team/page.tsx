@@ -4,7 +4,7 @@ import team from '../data/team.js'
 import TeamSection from '../components/TeamSection'
 const Page = () => {
   return (
-    <div className='w-screen min-h-screen py-48'>
+    <div className='event-background w-screen min-h-screen py-48'>
          <h2 className="ml-10 md:ml-24 text-6xl">Team</h2>
          
 
