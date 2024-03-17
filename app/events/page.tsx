@@ -30,7 +30,7 @@ const Page = () => {
   };
 
   return (
-    <div className="w-screen pt-48 min-h-screen">
+    <div className="w-screen pt-48 min-h-[130vh]  event-background">
       <h2 className=" ml-24 text-6xl mb-16">Events</h2>
 
       <div className='flex ml-24 gap-x-20 my-10 h-fit justify-start  items-center'>
@@ -38,27 +38,27 @@ const Page = () => {
         type="text"
         onChange={(e) => handleInputChange(e)}
         value={input}
-        className="text-lg text-white bg-transparent px-4 py-3 rounded-md border-2 outline-none border-white w-1/4 "
+        className="text-sm text-white bg-transparent px-3 py-2 rounded-md border outline-none border-white w-1/4 "
         placeholder="Search for Events"
       />
-      <div className="flex gap-10 ">
-        <button className={`tab-button  ${type === 'all'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`} onClick={() => handleTypeChange('all')}>
+      <div className="flex gap-10 text-xs ">
+        <button className={`tab-button  ${type === 'all'?'border-white border-opacity-60 border bg-indigo-950':''}`} onClick={() => handleTypeChange('all')}>
           All
         </button>
-        <button className={`tab-button ${type === 'upcoming'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`}  onClick={() => handleTypeChange('upcoming')}>
+        <button className={`tab-button ${type === 'upcoming'?'border-white border-opacity-60 border bg-indigo-950':''}`}  onClick={() => handleTypeChange('upcoming')}>
           Upcoming
         </button>
-        <button className={`tab-button ${type === 'past'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`}  onClick={() => handleTypeChange('past')}>
+        <button className={`tab-button ${type === 'past'?'border-white border-opacity-60 border bg-indigo-950':''}`}  onClick={() => handleTypeChange('past')}>
           Past
         </button>
-        <button className={`tab-button ${type === 'ongoing'?'border-white border-opacity-60 border-2 bg-indigo-950':''}`}  onClick={() => handleTypeChange('ongoing')}>
+        <button className={`tab-button ${type === 'ongoing'?'border-white border-opacity-60 border bg-indigo-950':''}`}  onClick={() => handleTypeChange('ongoing')}>
           Ongoing
         </button>
       </div>
       </div>
       {
         !notFound && (
-          <div className="w-screen min-h-screen mb-40 flex justify-center mx-auto gap-20 flex-wrap">
+          <div className="w-screen min-h-screen mb-40 flex justify-center mx-auto px-24 gap-20 flex-wrap">
             {events.map((item, index) => {
               return (
                 <EventCard
