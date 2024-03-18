@@ -31,7 +31,7 @@ const Page = () => {
   };
 
   return (
-    <div className="w-screen pt-48 py-2  min-h-[130vh] event-background">
+    <div className="w-screen pt-24 py-2  min-h-[130vh] event-background">
        <div className='ml-10 md:ml-24'><Heading title='Events' subtitle='Stay updated with the latest events and activities organized by CSI.' refTitle='Discover'/></div>
 
       <div className='flex flex-col justify-start ml-10 md:gap-x-20 my-10 h-fit items-start md:flex-row md:ml-24 gap-5 '>
@@ -59,7 +59,7 @@ const Page = () => {
       </div>
       {
         !notFound && (
-          <div className="w-screen min-h-screen mb-40 flex justify-center mx-auto px-24 gap-20 flex-wrap">
+          <div className="w-screen min-h-screen mb-40 flex justify-center mx-auto -z-10 px-24 gap-20 flex-wrap relative">
             {events.map((item, index) => {
               return (
                 <EventCard

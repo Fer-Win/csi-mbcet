@@ -5,7 +5,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const grotesk = Darker_Grotesque({ subsets: ["latin"] });
+const grotesk = Hanken_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

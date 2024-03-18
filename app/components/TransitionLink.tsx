@@ -9,9 +9,10 @@ const TransitionLink = ({href, label}: {href: string, label: string}) => {
     const pathname = usePathname();
 
     const handleClick = () => {
-        if(pathname !== href){
-            animatePageOut(href,router);
-        }
+        // if(pathname !== href){
+        //     animatePageOut(href,router);
+        // }
+        router.push(href);
        
     }
     return(

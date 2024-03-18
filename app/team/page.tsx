@@ -8,7 +8,7 @@ const Page = () => {
     <div className='event-background w-screen h-fit min-h-screen pt-11 pb-48'>
          {/* <h2 className="ml-10 md:ml-24 text-6xl">Team</h2> */}
          
-     <div className='ml-10 md:ml-48'>
+     <div className='pl-10 md:pl-24'>
      <Heading title='Meet Our Team' subtitle='Get to know the talented individuals leading our club.' refTitle='Empowering '/>
      </div>
       <TeamSection TeamName='Management'/>

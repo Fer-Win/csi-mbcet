@@ -25,7 +25,7 @@ const Navigation =()=>{
     const [showMenu, setShowMenu] = useState(false);
     return(
     //   <Headroom>
-          <nav className="w-screen flex flex-row place-items-center justify-between px-10 md:px-24 py-3  bg-opacity-65  backdrop-blur-md z-10">
+          <nav className="w-screen flex flex-row place-items-center justify-between px-10 md:px-24 py-3  bg-opacity-65  backdrop-blur-md z-10  ">
        <Link href='/'>
         <Image alt="Logo" width={60} height={60} src={'/logo/CSI_Logo_white.png'}></Image>
         <div className="font-normal text-opacity-20 text-center text-sm tracking-tighter">MBCET</div>
@@ -47,7 +47,7 @@ const Navigation =()=>{
                 
             </div>
     </nav>
-    //   </Headroom>
+    //  </Headroom>
     )
 }
 
