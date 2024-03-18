@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import JoinButton from './JoinButton'
+import JoinButton from '../JoinButton'
 
 const HeroSection = () => {
   return (
