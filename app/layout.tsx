@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter,Hanken_Grotesk } from "next/font/google";
+import { Inter,Hanken_Grotesk,Darker_Grotesque } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const grotesk = Hanken_Grotesk({ subsets: ["latin"] });
+const grotesk = Darker_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

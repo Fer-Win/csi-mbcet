@@ -18,8 +18,8 @@ const EventCard:React.FC<EventCardProps> = ({EventName,Date,EventType,Tags,Image
     <div className='hover:scale-110 transition-all ease-in duration-150  p-2 overflow-hidden flex flex-col w-fit md:w-1/5 md:flex-shrink-0 rounded-md text-2xl font-bold gap-5 h-fit min-h-max border-white border border-opacity-25 hover:bg-white hover:bg-opacity-5 '>
         <div className=' overflow-hidden  bg-center bg-cover relative'>
            
-            <div className='text-sm font-normal l mb-1 flex flex-col justify-center items-center px-2 text-center rounded-md py-1 right-3 top-3 bg-white leading-6 text-black z-10 absolute'>{Date}</div>
-            <Image src={url} width={900} height={900} alt='Event Image' className='rounded-md object-cover '></Image>
+            <div className='text-sm font-normal l mb-1 flex flex-col justify-center items-center px-2 text-center rounded-md py-1 right-3 top-3 bg-white leading-6 text-black -z-10 absolute'>{Date}</div>
+            <Image src={url} width={900} height={900} alt='Event Image' className='rounded-md relative  -z-10 '></Image>
         </div>
         <div className='flex flex-col gap-1'>
             <div className='flex flex-col gap-2'>

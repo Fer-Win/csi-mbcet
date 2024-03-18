@@ -40,7 +40,7 @@ const Navigation =()=>{
             <div className="md:hidden block">
              <IoMenuOutline size={50} className="text-lg font-extralight" onClick={()=>setShowMenu(!showMenu)}/>
             </div>
-            <div className={`md:hidden fixed top-0 left-0 h-screen w-screen bg-slate-950 bg-opacity-95 flex flex-col place-items-center justify-center gap-8 transform transition-transform duration-300 ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`md:hidden fixed top-0 left-0 h-screen w-screen bg-slate-950 flex flex-col place-items-center z-50 justify-center gap-8 transform transition-transform duration-300 ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
             <IoCloseCircleOutline size={40} className="absolute top-40 right-10 text-opacity-50" onClick={()=>setShowMenu(false)} />
                 {menuItems()}
                 

@@ -40,9 +40,9 @@ const Member:React.FC<MemberProps> = ({img,name,linkedin,instagram,position }) =
   <motion.div
   ref={container}
   style={{scale:scrollYProgress, opacity:scrollYProgress}}
-  className=' max-w-60 flex flex-col gap-3 ml-0 md:ml-10 '>
-     <div className='w-60 h-60 bg-slate-300 group bg-center bg-cover rounded-tr-2xl rounded-b-2xl rounded-tl-sm  overflow-hidden'>
-    <Image className='group-hover:scale-125 transition-all ease-in-out duration-200' src={img} height={400} width={400} alt={name}></Image>
+  className=' max-w-60 relative -z-10 flex flex-col gap-3 ml-0 md:ml-10 '>
+     <div className='w-60 h-60 bg-slate-300 group bg-center relative rounded-tr-2xl rounded-b-2xl rounded-tl-sm  overflow-hidden'>
+    <Image className='group-hover:scale-125 transition-all relative ease-in-out duration-200' src={img} height={400} width={400} alt={name}></Image>
     </div>
     <div className={`flex flex-col gap-2   p-3 rounded-tr-2xl text-black rounded-b-2xl rounded-tl-sm  w-full` }style={{backgroundColor:randomPastelColor}}>
     <div className='flex px-5 py-1 text-base  border-black border-2 w-fit rounded-full '>{name}</div>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import eventsData from '../data/events';
 import EventCard from '../components/EventCard';
 import Footer from '../components/Footer';
+import Heading from '../components/Heading';
 
 const Page = () => {
   const [events, setEvents] = useState(eventsData);
@@ -31,7 +32,7 @@ const Page = () => {
 
   return (
     <div className="w-screen pt-48 py-2  min-h-[130vh] event-background">
-      <h2 className="ml-10 md:ml-24  text-6xl md:mb-16">Events</h2>
+       <div className='ml-10 md:ml-24'><Heading title='Events' subtitle='Stay updated with the latest events and activities organized by CSI.' refTitle='Discover'/></div>
 
       <div className='flex flex-col justify-start ml-10 md:gap-x-20 my-10 h-fit items-start md:flex-row md:ml-24 gap-5 '>
       <input
