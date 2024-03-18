@@ -22,6 +22,9 @@ export const animatePageIn = () => {
             ease : "sine.inOut",
             duration:1
             
+        }).to([bannerOne,bannerTwo,bannerThree,bannerFour],{
+            display:"none",
+            opacity:0,
         })
     }
 
@@ -43,7 +46,7 @@ export const animateLogoIn = () => {
         duration: 0.3,
     }).to(logo, {
         opacity:0,
-        display:"hidden",
+        display:"none",
     })
     logo2?.classList.remove('hidden');
     logo2?.classList.add('logo-container');
@@ -68,6 +71,9 @@ export const animatePageOut = (href:string,router: AppRouterInstance | String[])
             onComplete: () => {
                 router.push(href)
             }
+        }).to([bannerOne,bannerTwo,bannerThree,bannerFour],{
+            display:"none",
+            opacity:0,
         })
     }
 }

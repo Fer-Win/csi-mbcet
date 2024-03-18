@@ -93,3 +93,7 @@ body {
       transform: translateY(0);
   }
 } */
+
+li {
+  list-style: circle;
+}

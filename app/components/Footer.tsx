@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 const Footer = () => {
   return (
-    <div className={`footer w-screen h-fit  overflow-hidden  bg-background px-10 md:px-24 pt-4 md:py-6  bottom-0 border-t-[1px] border-white  `} >
+    <div className={`footer w-screen h-fit  overflow-hidden px-10 md:px-24 pt-4 md:py-6  bottom-0 border-t-[1px] border-white  `} >
        <div>
        <div className='flex flex-col md:flex-row mx-auto justify-between  w-full gap-10'>
          <div className='flex flex-col'>

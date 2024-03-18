@@ -5,9 +5,10 @@ import Banner from "./components/Landing/Banner";
 import HeroSection from "./components/Landing/HeroSection";
 import UpcomingEvents from "./components/Landing/UpcomingEvents";
 import NewsLetter from "./components/NewsLetter";
+import Info from "./components/Info";
 export default function Home() {
   return (
-    <div className="">
+    <div className="event-background">
       {/* <div className="w-screen h-screen">
           <div>
             Computer Society of India - MBCET Chapter
@@ -15,12 +16,12 @@ export default function Home() {
       </div> */}
 <HeroSection/>
      <Banner></Banner>
+  
+     <Info/>
+ 
      <UpcomingEvents/>
     <NewsLetter/>
-      <div className="">
-      {/* <Paragraph  paragraph="Computer Society of India, established in the year 1965, is today the largest IT professional society in India. The purpose of the Society are scientific and educational directed towards the advancement of the theory and practice of computer science, computer engineering and technology, systems science and engineering, information processing and related arts and sciences." /> */}
-
-      </div>
+     
     </div>
   );
 }
