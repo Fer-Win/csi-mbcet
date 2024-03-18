@@ -36,7 +36,11 @@ const Navigation =()=>{
                     <TransitionLink href="/events" label="Events"/>
                     <TransitionLink href="/team" label="Team"/>
                     <TransitionLink href="/about" label="About"/>
-                    <JoinButton large={false}/>
+                    <a href="https://forms.gle/XqyrWmPBkx1hU8WLA" target="_blank">
+                    <button className='flex justify-center bg-white text-black items-center border-white border px-4 py-2 border-opacity-25 hover:bg-black hover:border-white hover:text-white transition-all  duration-200 ease-in-out'>
+          Join CSI
+        </button>
+                    </a>
             </div>
             <div className="md:hidden block">
              <IoMenuOutline size={50} className="text-lg font-extralight" onClick={()=>setShowMenu(!showMenu)}/>

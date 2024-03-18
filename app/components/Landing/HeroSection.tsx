@@ -5,11 +5,11 @@ import JoinButton from '../JoinButton'
 const HeroSection = () => {
   return (
    
-        <div className="w-full h-fit -z-10   flex flex-col items-center pt-20 px-8 relative">
+        <div className="w-full h-fit -z-10 bg-emerald-400 overflow-hidden  flex flex-col items-center pt-20 px-8 relative">
           <div className='w-full rounded-3xl pt-20 bg-white h-[600px] text-center   event-background mb-10'>
-            <h1 className="text-8xl tracking-tighter uppercase text-center font-bold text-black">Computer Society of India</h1>
+            <h1 className="text-7xl md:text-8xl tracking-tighter uppercase text-center font-bold text-black">Computer Society of India</h1>
             <h2 className="text-2xl font-light tracking-widest text-black">MBCET</h2>
-            <Image src={'/collegembcet.png'} width={5000} height={3000} alt='College' className='absolute left-1/2 bottom-10 scale-125 -translate-x-1/2'></Image>
+            <Image src={'/collegembcet.png'} width={5000} height={3000} alt='College' className='absolute left-1/2 bottom-8 md:bottom-10 scale-[2] md:scale-125 -translate-x-1/2'></Image>
           </div>
             {/* <div className='flex mb-12 relative object-contain gap-10 scale-75'>
           
