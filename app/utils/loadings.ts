@@ -29,6 +29,8 @@ export const animatePageIn = () => {
 
 export const animateLogoIn = () => {
     const logo = document.getElementById("logo")
+  const logo2=  document.getElementById('logo2')
+  
     const tl = gsap.timeline();
     tl.set(logo, {
         scale: 0,
@@ -43,6 +45,8 @@ export const animateLogoIn = () => {
         opacity:0,
         display:"hidden",
     })
+    logo2?.classList.remove('hidden');
+    logo2?.classList.add('logo-container');
 }
 
 export const animatePageOut = (href:string,router: AppRouterInstance | String[]) => {

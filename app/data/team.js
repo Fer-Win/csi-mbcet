@@ -14,7 +14,7 @@ const team =[
     "img_url": "https://source.unsplash.com/random/200x200/?portrait",
     "linkedin_url": "https://www.linkedin.com/in/janesmith",
     "github_url": "https://github.com/janesmith",
-    "position": "Vice President & Software Engineer",
+    "position": "Vice President ",
     "email": "jane.smith@example.com",
     "phone": "+1987654321",
     "team": "Management"
@@ -24,7 +24,7 @@ const team =[
     "img_url": "https://source.unsplash.com/random/200x200/?portrait",
     "linkedin_url": "https://www.linkedin.com/in/alexjohnson",
     "github_url": "https://github.com/alexjohnson",
-    "position": "Treasurer & Data Analyst",
+    "position": "Treasurer ",
     "email": "alex.johnson@example.com",
     "phone": "+1122334455",
     "team": "Management"
@@ -34,7 +34,7 @@ const team =[
     "img_url": "https://source.unsplash.com/random/200x200/?portrait",
     "linkedin_url": "https://www.linkedin.com/in/emilybrown",
     "github_url": "https://github.com/emilybrown",
-    "position": "Secretary & Cybersecurity Specialist",
+    "position": "Secretary ",
     "email": "emily.brown@example.com",
     "phone": "+1567890123",
     "team": "Management"
@@ -153,7 +153,7 @@ const team =[
   "img_url": "https://source.unsplash.com/random/200x200/?portrait",
   "linkedin_url": "https://www.linkedin.com/in/chenwang",
   "github_url": 'https://github.com/antoniorossi',
-  "position": "Product Manager (Lead)",
+  "position": "Lead",
   "email": "chen.wang@example.com",
   "phone": "+1074581920",
   "team": "Management"

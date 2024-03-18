@@ -5,7 +5,7 @@ import Link from "next/link";
 import JoinButton from "./JoinButton";
 import { IoMenuOutline,IoCloseCircleOutline } from "react-icons/io5";
 import { useState } from "react";
-
+import Headroom from "react-headroom"
 
 const menuItems = ()=>{
     return(
@@ -24,7 +24,8 @@ const menuItems = ()=>{
 const Navigation =()=>{
     const [showMenu, setShowMenu] = useState(false);
     return(
-        <nav className="w-screen flex flex-row place-items-center justify-between px-10 md:px-24 py-3  bg-opacity-65 fixed backdrop-blur-md z-30">
+    //   <Headroom>
+          <nav className="w-screen flex flex-row place-items-center justify-between px-10 md:px-24 py-3  bg-opacity-65  backdrop-blur-md z-10">
        <Link href='/'>
         <Image alt="Logo" width={60} height={60} src={'/logo/CSI_Logo_white.png'}></Image>
         <div className="font-normal text-opacity-20 text-center text-sm tracking-tighter">MBCET</div>
@@ -46,6 +47,7 @@ const Navigation =()=>{
                 
             </div>
     </nav>
+    //   </Headroom>
     )
 }
 

@@ -25,7 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -33,7 +33,7 @@ body {
     text-wrap: balance;
   }
 
-  .tab-button{
+  .tab-button {
     @apply px-4 py-2  text-white text-sm md:text-base font-light rounded hover:bg-indigo-950 transition-all ease-in-out duration-100;
   }
 }
@@ -41,11 +41,10 @@ body {
   margin-top: auto;
 }
 
-.event-background{
-  background-image: url('/bg_grid.png');
+.event-background {
+  background-image: url("/bg_grid.png");
 }
-.paragraph{
-
+.paragraph {
   display: flex;
 
   font-size: 60px;
@@ -60,22 +59,23 @@ body {
 
   flex-wrap: wrap;
 
-  .word{
-
+  .word {
     position: relative;
 
     margin-right: 12px;
 
     margin-top: 12px;
 
-    .shadow{
-
+    .shadow {
       position: absolute;
 
       opacity: 20%;
-
     }
+  }
+}
 
-  } 
-
+.logo-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
